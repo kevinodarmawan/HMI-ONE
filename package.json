@@ -1,0 +1,28 @@
+{
+  "name": "hmioneweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:case": "playwright test --grep",
+    "test:functional": "playwright test tests/functional",
+    "test:functional:appointments": "playwright test tests/functional --grep @appointments",
+    "test:functional:auth": "playwright test tests/functional --grep @auth",
+    "test:functional:content": "playwright test tests/functional --grep @content",
+    "test:functional:contact": "playwright test tests/functional --grep @contact",
+    "test:unit": "playwright test tests/unit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "@types/node": "^26.6.6"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.10"
+  }
+}

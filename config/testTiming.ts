@@ -1,0 +1,1 @@
+export const SMOKE_RENDER_DELAY_MS = 10_000;
